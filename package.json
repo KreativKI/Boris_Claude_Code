@@ -1,0 +1,29 @@
+{
+  "name": "boris_workflow_template",
+  "version": "1.0.0",
+  "description": "Boris Cherny's Claude Code workflow template",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Build step (placeholder)'",
+    "test": "echo 'Running tests (placeholder)' && exit 0",
+    "test:file": "echo 'Testing specific file (placeholder)'",
+    "typecheck": "echo 'Type checking (placeholder)'",
+    "lint": "echo 'Linting all files (placeholder)'",
+    "lint:file": "echo 'Linting specific file (placeholder)'",
+    "lint:claude": "echo 'Claude-specific lint (placeholder)'",
+    "format": "echo 'Formatting code (placeholder)'",
+    "dev": "echo 'Starting dev server (placeholder)'"
+  },
+  "keywords": [
+    "claude",
+    "workflow",
+    "template"
+  ],
+  "author": "KreativKI",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
+  }
+}
