@@ -3,7 +3,9 @@
 **What is the Boris Workflow?**
 A development methodology by Boris Cherny (creator of Claude Code) that ensures code quality through systematic verification at each step. Think of it like quality control checkpoints in film production.
 
-**Source:** [Boris Cherny's Claude Config](https://github.com/0xquinto/bcherny-claude)
+**Original Source:** [Boris Cherny's X post](https://x.com/bcherny/status/2007179832300581177)
+**Boris Cherny's GitHub:** https://github.com/bcherny
+**Community Reference:** [0xquinto/bcherny-claude](https://github.com/0xquinto/bcherny-claude) (NOT official - community interpretation)
 
 ---
 
@@ -35,7 +37,7 @@ All agents are now installed from official sources:
 | `code-reviewer` | `feature-dev` plugin | Reviews code for bugs and issues |
 | `code-simplifier` | `pr-review-toolkit` plugin | Cleans up code for readability |
 
-### From Boris Cherny's Config (`bcherny-claude`)
+### From Community Repo (0xquinto - NOT official Boris)
 
 | Agent | Purpose |
 |-------|---------|
@@ -48,7 +50,7 @@ All agents are now installed from official sources:
 ## Agent Details
 
 ### 1. Build Validator (`build-validator.md`) 🟢
-**Source:** [bcherny-claude](https://github.com/0xquinto/bcherny-claude)
+**Source:** Community repo (0xquinto) - adapted for this template
 **When:** Before committing, after any code changes
 **What it does:** Runs clean build, typecheck, lint, and tests
 **Film Analogy:** The lab checking the film negatives for defects
@@ -74,13 +76,13 @@ All agents are now installed from official sources:
 **Film Analogy:** The editor trimming unnecessary footage
 
 ### 5. Verify App (`verify-app.md`) 🟣
-**Source:** [bcherny-claude](https://github.com/0xquinto/bcherny-claude)
+**Source:** Community repo (0xquinto) - adapted for this template
 **When:** After any changes to verify they work
 **What it does:** Static analysis, automated tests, manual verification, edge cases
 **Film Analogy:** Color timing and final QC in post-production
 
 ### 6. On-Call Guide (`oncall-guide.md`) 🟠
-**Source:** [bcherny-claude](https://github.com/0xquinto/bcherny-claude)
+**Source:** Community repo (0xquinto) - adapted for this template
 **When:** Production issues or incident response
 **What it does:** Guides through incident severity, investigation, resolution
 **Film Analogy:** The on-set medic and safety coordinator
@@ -185,15 +187,17 @@ The project has a hook in `.claude/settings.json` that automatically formats cod
 
 ---
 
-## Official Sources
+## Sources
 
-All agents come from verified sources:
+| Source | URL | Type | Agents |
+|--------|-----|------|--------|
+| Boris Cherny's X post | https://x.com/bcherny/status/2007179832300581177 | **OFFICIAL** | Original workflow spec |
+| Boris Cherny's GitHub | https://github.com/bcherny | **OFFICIAL** | His actual account |
+| Anthropic Plugins | `~/.claude/plugins/marketplaces/claude-code-plugins/` | Official | code-architect, code-reviewer, code-simplifier |
+| Community repo (0xquinto) | https://github.com/0xquinto/bcherny-claude | **Community** | build-validator, verify-app, oncall-guide |
+| Anthropic Skills | https://github.com/anthropics/skills | Official | Skill templates |
 
-| Source | URL | Agents |
-|--------|-----|--------|
-| Anthropic Plugins | `~/.claude/plugins/marketplaces/claude-code-plugins/` | code-architect, code-reviewer, code-simplifier |
-| Boris Cherny's Config | https://github.com/0xquinto/bcherny-claude | build-validator, verify-app, oncall-guide |
-| Anthropic Skills | https://github.com/anthropics/skills | Official skill templates |
+**Note:** The 0xquinto repo is a community interpretation, NOT Boris Cherny's official repo.
 
 ---
 
@@ -221,7 +225,7 @@ All agents come from verified sources:
 
 ## Template vs Official Comparison
 
-Your template is **more comprehensive** than the official bcherny-claude:
+Your template is **more comprehensive** than the community 0xquinto repo:
 
 | Feature | Official | Your Template |
 |---------|----------|---------------|

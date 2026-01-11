@@ -161,11 +161,14 @@ The Meta-Rule in `CLAUDE.md` tracks mistakes and solutions:
 
 This template is based on verified sources:
 
-| Source | Content |
-|--------|---------|
-| [Boris Cherny's Config](https://github.com/0xquinto/bcherny-claude) | build-validator, verify-app, oncall-guide agents |
-| [Anthropic Plugins](https://github.com/anthropics) | code-architect, code-reviewer, code-simplifier agents |
-| [Boris Cherny's X Thread](https://x.com/bcherny/status/2007179832300581177) | Original workflow specification |
+| Source | Type | Content |
+|--------|------|---------|
+| [Boris Cherny's X Thread](https://x.com/bcherny/status/2007179832300581177) | **OFFICIAL** | Original workflow specification |
+| [Boris Cherny's GitHub](https://github.com/bcherny) | **OFFICIAL** | His actual GitHub account |
+| [Anthropic Plugins](https://github.com/anthropics) | Official | code-architect, code-reviewer, code-simplifier agents |
+| [Community repo (0xquinto)](https://github.com/0xquinto/bcherny-claude) | Community | build-validator, verify-app, oncall-guide agents |
+
+**Note:** The 0xquinto repo is a community interpretation, NOT Boris Cherny's official repo.
 
 ## License
 
